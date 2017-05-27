@@ -1,0 +1,87 @@
+.lightred {
+	background-color: #B71C1C;
+}
+
+.darkred {
+	background-color: #7F0000;
+}
+
+body {
+	color: white;
+	font-family: verdana;
+	margin: 0;
+}
+
+.banner img {
+	width: 100%;
+}
+
+.navigation ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: white;
+}
+
+.navigation li {
+	padding: 10px;
+}
+
+.active {
+	font-weight: 700;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 50px 100px;
+}
+
+.welcome {
+	position: relative;
+	text-align: center;
+}
+
+.welcome img {
+	width: 70%;
+	opacity: 0.5;
+}
+
+.welcome h3 {
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 100px;
+	width: 100%;
+}
+
+.row img {
+	width: 100%;
+}
+
+.col50 {
+	width: 47%;
+}
+
+.col70 {
+	width: 67%;
+}
+
+.col30 {
+	width: 27%;
+}
+
+.caption {
+	text-align: center;
+}
+
+.caption p {
+	text-align: justify;
+}
