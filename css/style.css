@@ -16,16 +16,24 @@ body {
 	width: 100%;
 }
 
-.navigation ul {
+h1 {
+	display: inline-block;
+}
+
+ul {
 	list-style: none;
+}
+
+.navigation ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	margin: 0 auto;
 }
 
-.navigation a {
+a {
 	text-decoration: none;
+	cursor: pointer;
 	color: white;
 }
 
@@ -41,7 +49,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 50px 100px;
+	padding: 50px 150px;
 }
 
 .welcome {
@@ -66,16 +74,13 @@ body {
 	width: 100%;
 }
 
-.col50 {
-	width: 47%;
+.col {
+	padding: 30px;
+	flex: 1;
 }
 
-.col70 {
-	width: 67%;
-}
-
-.col30 {
-	width: 27%;
+.col-dou {
+	flex: 2;
 }
 
 .caption {
@@ -84,4 +89,46 @@ body {
 
 .caption p {
 	text-align: justify;
+}
+
+#products {
+	text-align: center;
+}
+
+#products .row {
+	padding-top: 0;
+}
+
+.footer img {
+	width: 100px;
+	height: 100px;
+}
+
+.footer .col:first-child {
+	display: flex;
+}
+
+.copyright {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#overlay {
+	background-image: url(../img/banner/banner3.jpg);
+	color: #efefef;
+	height: 450px;
+}
+
+
+/* container for external content. uses vertical scrollbar, if needed */
+
+div.contentWrap {
+	height: 441px;
+	overflow-y: auto;
+}
+
+@media only screen and (max-width: 768px) {
+	.row {
+		flex-direction: column;
+	}
 }
