@@ -113,18 +113,36 @@ a {
 	padding-bottom: 10px;
 }
 
-#overlay {
-	background-image: url(../img/banner/banner3.jpg);
-	color: #efefef;
-	height: 450px;
+body {
+	background: rgba(0, 0, 0, 0.85);
 }
 
+.close {
+	background: url('/img/icon/close.png') no-repeat center;
+	float: right;
+	margin-right: 100px;
+	margin-top: 10px;
+	opacity: 0.3;
+	cursor: pointer;
+	display: block;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 3px solid rgba(255, 0, 0, 0);
+	-webkit-transition: 0.5s cubic-bezier(.27, 1.64, .32, .95);
+	-moz-transition: 0.5s cubic-bezier(.27, 1.64, .32, .95);
+	-ms-transition: 0.5s cubic-bezier(.27, 1.64, .32, .95);
+	-o-transition: 0.5s cubic-bezier(.27, 1.64, .32, .95);
+	transition: 0.5s cubic-bezier(.27, 1.64, .32, .95);
+}
 
-/* container for external content. uses vertical scrollbar, if needed */
-
-div.contentWrap {
-	height: 441px;
-	overflow-y: auto;
+.close:hover {
+	opacity: 1;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	border-radius: 50%;
+	border-color: rgba(255, 0, 0, 0.2);
 }
 
 @media only screen and (max-width: 768px) {
