@@ -20,7 +20,8 @@ h1 {
 	display: inline-block;
 }
 
-ul {
+.footer ul,
+.navigation ul {
 	list-style: none;
 }
 
@@ -31,7 +32,8 @@ ul {
 	margin: 0 auto;
 }
 
-a {
+.footer a,
+.navigation a {
 	text-decoration: none;
 	cursor: pointer;
 	color: white;
