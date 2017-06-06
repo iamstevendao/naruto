@@ -6,8 +6,14 @@
 	<link rel="icon" href="../img/icon/naruto.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/style.css">
-	<script src="../js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="../js/animation.js"></script>
+	<style>
+		#map {
+			height: 400px;
+			width: 100%;
+		}
+	</style>
 </head>
 
 <body>
@@ -17,7 +23,7 @@
 	<div class="navigation darkred">
 		<ul>
 			<li><a href="index.html">HOME</a></li>
-			<li class="active"><a href="stories.html">STORIES</a></li>
+			<li><a href="stories.html">STORIES</a></li>
 			<li><a href="characters.html">CHARACTERS</a></li>
 			<li><a href="products.html">PRODUCTS</a></li>
 			<li><a href="about.html">ABOUT</a></li>
@@ -25,23 +31,16 @@
 	</div>
 	<div class="content">
 		<div class="row lightred">
-			<div class="col">
-				<img src="../img/stories/dattebayo.jpg">
+			<div class="col-dou">
+				<div id="map"></div>
 			</div>
 			<div class="col">
-				<h2>Collections</h2>
-				<p>LKAJDFljldsafjlskdfjsdsfljalskdfjlsadfjlsd</p>
-			</div>
-		</div>
-		<div class="row darkred">
-			<div class="col">
-				<a href="shippuden.html">
-					<img src="../img/stories/dattebayo.jpg">
-				</a>
-			</div>
-			<div class="col">
-				<h2>Collections</h2>
-				<p>LKAJDFljldsafjlskdfjsdsfljalskdfjlsadfjlsd</p>
+				<ul>
+					<li>Japan, 〒106-6108 Tōkyō-to, Minato-ku, Roppongi, 6 Chome−１１−１</li>
+					<li>Phone: 0123456789</li>
+					<li>Fax: 0123456789</li>
+					<li>Email: naruto@naruto.com</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -71,6 +70,24 @@
 		</div>
 		<div class="copyright">&copy; Steven Dao 2017</div>
 	</div>
+	<script>
+		function initMap() {
+			var uluru = {
+				lat: 35.660388,
+				lng: 139.728947
+			};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 15,
+				center: uluru
+			});
+			var marker = new google.maps.Marker({
+				position: uluru,
+				map: map
+			});
+		}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDECzSdy1wnQJlLat93gStYGN_QyLoNpJg&callback=initMap">
+	</script>
 </body>
 
 </html>
