@@ -11,6 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="../css/demo.css" />
 	<script src="../js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="../js/animation.js"></script>
 </head>
 
 <body>
@@ -18,13 +20,18 @@
 		<img src="../img/banner/banner6.jpg">
 	</div>
 	<div id="nav" class="navigation darkred">
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="stories.html#nav">STORIES</a></li>
-			<li><a href="characters.html#nav">CHARACTERS</a></li>
-			<li class="active"><a href="products.html#nav">PRODUCTS</a></li>
-			<li><a href="about.html#nav">ABOUT</a></li>
-		</ul>
+		<button class="nav-button">
+      		<img src="../img/icon/bars.png">
+    	</button>
+		<div class="navi-bar">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="stories.html#nav">STORIES</a></li>
+				<li><a href="characters.html#nav">CHARACTERS</a></li>
+				<li class="active"><a href="products.html#nav">PRODUCTS</a></li>
+				<li><a href="contact.html#nav">CONTACT</a></li>
+			</ul>
+		</div>
 	</div>
 	<div class="row tree lightred">
 		<a href="index.html">Home</a><span> / </span><a href="products.html#nav">Products</a><span> / </span><a class="active" href="comics.html#nav">Comics</a>
@@ -102,26 +109,30 @@
 	</div>
 	<footer class="darkred">
 		<div class="row">
-			<div class="col col-dou">
-				<img id="logo" src="../img/icon/naruto.ico">
-				<h2>Naruto Website</h2>
+			<div class="col col-dou center-mobile">
+				<a href="index.html"><img id="logo" src="../img/icon/naruto.ico" alt="logo"></a>
+				<a href="index.html">
+					<h2>Naruto Website</h2>
+				</a>
 			</div>
-			<div class="col">
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="stories.html#nav">STORIES</a></li>
-					<li><a href="characters.html#nav">CHARACTERS</a></li>
-					<li><a href="products.html#nav">PRODUCTS</a></li>
-					<li><a href="about.html#nav">ABOUT</a></li>
-				</ul>
-			</div>
-			<div class="col">
-				<ul>
-					<li>Contact us:</li>
-					<li>Phone: 0123456789</li>
-					<li>Fax: 0123456789</li>
-					<li>Email: naruto@naruto.com</li>
-				</ul>
+			<div class="rowx">
+				<div class="col">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="stories.html#nav">STORIES</a></li>
+						<li><a href="characters.html#nav">CHARACTERS</a></li>
+						<li><a href="products.html#nav">PRODUCTS</a></li>
+						<li><a href="about.html#nav">ABOUT</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<ul>
+						<li>Contact us:</li>
+						<li>Phone: 0123456789</li>
+						<li>Fax: 0123456789</li>
+						<li>Email: naruto@naruto.com</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="copyright">&copy; Steven Dao 2017</div>

@@ -14,20 +14,25 @@
 	<div class="banner">
 		<img src="../img/banner/banner6.jpg">
 	</div>
-	<div class="navigation darkred">
-		<ul>
-			<li class="active"><a href="index.html">HOME</a></li>
-			<li><a href="stories.html#nav">STORIES</a></li>
-			<li><a href="characters.html#nav">CHARACTERS</a></li>
-			<li><a href="products.html#nav">PRODUCTS</a></li>
-			<li><a href="about.html#nav">ABOUT</a></li>
-		</ul>
+	<div id="nav" class="navigation darkred">
+		<button class="nav-button">
+      		<img src="../img/icon/bars.png">
+    	</button>
+		<div class="navi-bar">
+			<ul>
+				<li class="active"><a href="index.html">HOME</a></li>
+				<li><a href="stories.html#nav">STORIES</a></li>
+				<li><a href="characters.html#nav">CHARACTERS</a></li>
+				<li><a href="products.html#nav">PRODUCTS</a></li>
+				<li><a href="contact.html#nav">CONTACT</a></li>
+			</ul>
+		</div>
 	</div>
 	<div class="content">
 		<section class="lightred">
 			<div class="row welcome">
 				<div class="col">
-					<img src="../img/banner/banner3.jpg">
+					<img src="../img/banner/banner3.jpg" alt="banner">
 					<div class="middle">
 						<h1>Welcome to Naruto!</h1>
 						<p>The epic ninja adventure that became a global phenomenon!</p>
@@ -40,9 +45,9 @@
 				<div class="col">
 					<a href="dattebayo.html">
 						<div class="img-container">
-							<img src="../img/stories/dattebayo.jpg" alt="Avatar">
+							<img src="../img/stories/dattebayo.jpg" alt="dattebayo">
 							<div class="middle">
-								<div class="capt">Dattebayo &#5171;</div>
+								<div class="capt">Dattebayo &#5171;<br/><span style="font-size:14px">*For the best display, please use wide screen devices</span></div>
 							</div>
 						</div>
 					</a>
@@ -54,9 +59,9 @@
 				<div class="col">
 					<a href="shippuden.html">
 						<div class="img-container">
-							<img src="../img/stories/shippuden.png" alt="Avatar">
+							<img src="../img/stories/shippuden.png" alt="shippuden">
 							<div class="middle">
-								<div class="capt">Shippuden &#5171;</div>
+								<div class="capt">Shippuden &#5171;<br/><span style="font-size:14px">*For the best display, please use wide screen devices</span></div>
 							</div>
 						</div>
 					</a>
@@ -70,9 +75,9 @@
 		<section class="lightred">
 			<div class="row">
 				<div class="col col-dou">
-					<a href="characters.html">
+					<a href="characters.html#nav">
 						<div class="img-container">
-							<img src="../img/characters/all.jpg" alt="Avatar">
+							<img src="../img/characters/all.jpg" alt="characters">
 							<div class="middle">
 								<div class="capt">Characters &#5171;</div>
 							</div>
@@ -81,20 +86,26 @@
 				</div>
 				<div class="col">
 					<div>
-						<h2>Characters</h2>
+						<a href="characters.html#nav">
+							<h2>Characters</h2>
+						</a>
 						<p class="justify">Naruto series features an extensive cast of characters. Check out all main characters in Naruto with their own stories and background from Protagonists, Antagonists, Supporting characters...</p>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="products" class="darkred">
-			<h1>Products</h1>
+			<a href="products.html">
+				<h1>Products</h1>
+			</a>
 			<div class="row">
 				<div class="col">
-					<h2>Comics</h2>
 					<a href="comics.html">
+						<h2>Comics</h2>
+					</a>
+					<a href="comics.html#nav">
 						<div class="img-container">
-							<img src="../img/products/comics.jpg" alt="Avatar">
+							<img src="../img/products/comics.jpg" alt="comics">
 							<div class="middle">
 								<div class="capt">Comics &#5171;</div>
 							</div>
@@ -102,10 +113,12 @@
 					</a>
 				</div>
 				<div class="col">
-					<h2>Figures</h2>
 					<a href="figures.html">
+						<h2>Figures</h2>
+					</a>
+					<a href="figures.html#nav">
 						<div class="img-container">
-							<img src="../img/products/figures.jpg" alt="Avatar">
+							<img src="../img/products/figures.jpg" alt="figures">
 							<div class="middle">
 								<div class="capt">Figures &#5171;</div>
 							</div>
@@ -113,10 +126,12 @@
 					</a>
 				</div>
 				<div class="col">
-					<h2>Collections</h2>
-					<a href="collection.html">
+					<a href="collections.html">
+						<h2>Collections</h2>
+					</a>
+					<a href="collections.html#nav">
 						<div class="img-container">
-							<img src="../img/products/collections.png" alt="Avatar">
+							<img src="../img/products/collections.png" alt="collections">
 							<div class="middle">
 								<div class="capt">Collections &#5171;</div>
 							</div>
@@ -132,33 +147,37 @@
 					<p>This chart provides lists of best-selling manga series to date. Naruto is ranked third overall, only behinds ongoing series: OnePiece and DragonBall.</p>
 				</div>
 				<div class="col col-dou">
-					<img src="../img/chart.png">
+					<img src="../img/chart.png" alt="statistics">
 				</div>
 			</div>
 		</section>
 	</div>
 	<footer class="darkred">
 		<div class="row">
-			<div class="col col-dou">
-				<img id="logo" src="../img/icon/naruto.ico">
-				<h2>Naruto Website</h2>
+			<div class="col col-dou center-mobile">
+				<a href="index.html"><img id="logo" src="../img/icon/naruto.ico" alt="logo"></a>
+				<a href="index.html">
+					<h2>Naruto Website</h2>
+				</a>
 			</div>
-			<div class="col">
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="stories.html#nav">STORIES</a></li>
-					<li><a href="characters.html#nav">CHARACTERS</a></li>
-					<li><a href="products.html#nav">PRODUCTS</a></li>
-					<li><a href="about.html#nav">ABOUT</a></li>
-				</ul>
-			</div>
-			<div class="col">
-				<ul>
-					<li>Contact us:</li>
-					<li>Phone: 0123456789</li>
-					<li>Fax: 0123456789</li>
-					<li>Email: naruto@naruto.com</li>
-				</ul>
+			<div class="rowx">
+				<div class="col">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="stories.html#nav">STORIES</a></li>
+						<li><a href="characters.html#nav">CHARACTERS</a></li>
+						<li><a href="products.html#nav">PRODUCTS</a></li>
+						<li><a href="about.html#nav">ABOUT</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<ul>
+						<li>Contact us:</li>
+						<li>Phone: 0123456789</li>
+						<li>Fax: 0123456789</li>
+						<li>Email: naruto@naruto.com</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="copyright">&copy; Steven Dao 2017</div>

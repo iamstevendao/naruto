@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/*general*/
+
 .lightred {
 	background-color: #B71C1C;
 }
@@ -34,17 +37,32 @@ h1 {
 	text-align: center;
 }
 
+.justify {
+	text-align: justify;
+}
+
+
+/*navigation*/
+
 footer ul,
-.navigation ul {
+.navi-bar ul {
 	list-style: none;
 }
 
-.navigation ul {
+.navigation {
+	margin-top: -4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.navi-bar ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	margin: 0 auto;
 	padding: 10px;
+	text-align: center;
 }
 
 .navigation a,
@@ -52,7 +70,7 @@ footer ul,
 	color: #BBBBBB;
 }
 
-.navigation li {
+.navi-bar li {
 	padding: 10px;
 }
 
@@ -62,12 +80,24 @@ footer ul,
 	color: white;
 }
 
-.navigation a:hover,
+.navi-bar a:hover,
 .tree a:hover,
 footer a:hover {
 	color: white;
 	font-weight: 700;
 }
+
+.nav-button {
+	width: 45px;
+	height: 45px;
+	background-color: transparent;
+	border: 0;
+	display: none;
+	margin: 0 auto;
+}
+
+
+/*button*/
 
 .button {
 	border-radius: 4px;
@@ -107,6 +137,9 @@ footer a:hover {
 	right: 0;
 }
 
+
+/*row and col*/
+
 .row {
 	display: flex;
 	flex-direction: row;
@@ -114,30 +147,6 @@ footer a:hover {
 	width: 900px;
 	margin: 0 auto;
 	max-width: 90%;
-}
-
-.tree {
-	display: block;
-	font-size: 14px;
-	width: 80%;
-	margin: 5px auto;
-}
-
-.welcome {
-	text-align: center;
-}
-
-.welcome img {
-	width: 70%;
-	opacity: 0.5;
-}
-
-.welcome h3 {
-	left: 0;
-	position: absolute;
-	text-align: center;
-	top: 100px;
-	width: 100%;
 }
 
 .row img {
@@ -151,15 +160,6 @@ footer a:hover {
 	max-width: 50%;
 }
 
-#products .col {
-	padding-top: 0;
-}
-
-.welcome .col {
-	max-width: 100%;
-	position: relative;
-}
-
 .col-dou {
 	flex: 2;
 	max-width: 80%;
@@ -169,6 +169,47 @@ footer a:hover {
 	text-align: center;
 }
 
+.tree {
+	display: block;
+	font-size: 14px;
+	width: 80%;
+	margin: 5px auto;
+}
+
+
+/*welcome in homepage*/
+
+.welcome {
+	text-align: center;
+}
+
+.welcome h3 {
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 100px;
+	width: 100%;
+}
+
+.welcome .col {
+	max-width: 100%;
+	position: relative;
+}
+
+.welcome img {
+	opacity: 0.5;
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+
+/*products page*/
+
+#products .col {
+	padding-top: 0;
+}
+
 #products {
 	padding-top: 10px;
 	text-align: center;
@@ -176,20 +217,6 @@ footer a:hover {
 
 #products .row {
 	padding-top: 0;
-}
-
-#logo {
-	width: 100px;
-	height: 100px;
-}
-
-footer .col-dou {
-	display: flex;
-}
-
-.copyright {
-	text-align: center;
-	padding-bottom: 10px;
 }
 
 #sample-header {
@@ -203,6 +230,29 @@ footer .col-dou {
 	max-width: 90%;
 }
 
+
+/*footer*/
+
+#logo {
+	width: 100px;
+	height: 100px;
+}
+
+footer .col-dou {
+	display: flex;
+}
+
+.rowx {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.copyright {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
 .middle {
 	position: absolute;
 	top: 50%;
@@ -211,15 +261,12 @@ footer .col-dou {
 	-ms-transform: translate(-50%, -50%);
 }
 
+
+/*image hover effect*/
+
 .middle h3,
 .middle p {
 	display: block;
-}
-
-.welcome img {
-	display: block;
-	height: auto;
-	width: 100%;
 }
 
 .img-container {
@@ -251,11 +298,136 @@ footer .col-dou {
 
 .capt {
 	color: white;
+	text-align: center;
 }
 
-.justify {
-	text-align: justify;
+
+/*map*/
+
+#map {
+	height: 400px;
+	width: 100%;
 }
+
+
+/*contact form*/
+
+form {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#feedback-page {
+	text-align: center;
+}
+
+#form-div {
+	background-color: rgba(72, 72, 72, 0.4);
+	width: 900px;
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color: #3c3c3c;
+	font-weight: 500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.feedback-input:focus {
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #B71C1C;
+	color: black;
+	outline: none;
+	padding: 13px 13px 13px 54px;
+}
+
+.focused {
+	color: black;
+	border: #B71C1C solid 3px;
+}
+
+
+/* Icons ---------------------------------- */
+
+#name {
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus {
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email {
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus {
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment {
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	line-height: 150%;
+	resize: vertical;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+	background-color: white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div {
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+
+/*close button*/
 
 .close {
 	background: url('../img/icon/close.png') no-repeat center;
@@ -285,6 +457,10 @@ footer .col-dou {
 	border-color: rgba(255, 0, 0, 0.2);
 }
 
+.credits a {
+	text-decoration: underline;
+}
+
 @media only screen and (max-width: 768px) {
 	footer .row {
 		width: 100%;
@@ -303,6 +479,9 @@ footer .col-dou {
 		max-width: 100%;
 		padding: 0;
 	}
+	.switchable {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -320,5 +499,27 @@ footer .col-dou {
 	}
 	.col {
 		max-width: 100%;
+	}
+	/*resize navigation icon for small screen*/
+	.navi-bar ul {
+		padding: 0;
+		flex-direction: column;
+		justify-content: flex-end;
+		overflow: hidden;
+		transition: all 0.5s;
+		max-height: 0;
+	}
+	.nav-button {
+		display: block;
+		cursor: pointer;
+	}
+	.navi-bar ul.open {
+		max-height: 300px;
+	}
+	.switchable {
+		display: block;
+	}
+	.rowx {
+		flex-direction: column;
 	}
 }

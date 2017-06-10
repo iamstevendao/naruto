@@ -8,68 +8,95 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="../js/animation.js"></script>
-	<style>
-		#map {
-			height: 400px;
-			width: 100%;
-		}
-	</style>
 </head>
 
 <body>
 	<div class="banner">
-		<img src="../img/banner/banner6.jpg">
+		<img src="../img/banner/banner6.jpg" alt="banner">
 	</div>
-	<div class="navigation darkred">
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="stories.html">STORIES</a></li>
-			<li><a href="characters.html">CHARACTERS</a></li>
-			<li><a href="products.html">PRODUCTS</a></li>
-			<li><a href="about.html">ABOUT</a></li>
-		</ul>
-	</div>
-	<div class="content">
-		<div class="row lightred">
-			<div class="col-dou">
-				<div id="map"></div>
-			</div>
-			<div class="col">
-				<ul>
-					<li>Japan, 〒106-6108 Tōkyō-to, Minato-ku, Roppongi, 6 Chome−１１−１</li>
-					<li>Phone: 0123456789</li>
-					<li>Fax: 0123456789</li>
-					<li>Email: naruto@naruto.com</li>
-				</ul>
-			</div>
+	<div id="nav" class="navigation darkred">
+		<button class="nav-button">
+      		<img src="../img/icon/bars.png">
+    	</button>
+		<div class="navi-bar">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="stories.html#nav">STORIES</a></li>
+				<li><a href="characters.html#nav">CHARACTERS</a></li>
+				<li><a href="products.html#nav">PRODUCTS</a></li>
+				<li class="active"><a href="contact.html#nav">CONTACT</a></li>
+			</ul>
 		</div>
 	</div>
-	<div class="footer darkred">
+	<div class="row tree lightred">
+		<a href="index.html">Home</a><span> / </span><a class="active" href="contact.html#nav">Stories</a>
+	</div>
+	<div class="content">
+		<section class="lightred">
+			<div class="row">
+				<div class="col col-dou">
+					<div id="map"></div>
+				</div>
+				<div class="col">
+					<ul>
+						<li>Japan, 〒106-6108 Tōkyō-to, Minato-ku, Roppongi, 6 Chome−１１−１</li>
+						<li>Phone: 0123456789</li>
+						<li>Fax: 0123456789</li>
+						<li>Email: naruto@naruto.com</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="darkred">
+			<div class="row">
+				<div id="form-div">
+					<form class="form" id="form1">
+
+						<p class="name">
+							<input name="name" type="text" class="feedback-input" placeholder="Name" id="name" />
+						</p>
+						<p class="email">
+							<input name="email" type="text" class="feedback-input" id="email" placeholder="Email" />
+						</p>
+						<p class="text">
+							<textarea name="text" class="feedback-input" id="comment" placeholder="Comment"></textarea>
+						</p>
+						<div class="button"><span>Submit</span></div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="darkred">
 		<div class="row">
-			<div class="col col-dou">
-				<img src="../img/icon/naruto.ico">
-				<h2>Naruto Website</h2>
+			<div class="col col-dou center-mobile">
+				<a href="index.html"><img id="logo" src="../img/icon/naruto.ico" alt="logo"></a>
+				<a href="index.html">
+					<h2>Naruto Website</h2>
+				</a>
 			</div>
-			<div class="col">
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="stories.html">STORIES</a></li>
-					<li><a href="characters.html">CHARACTERS</a></li>
-					<li><a href="products.html">PRODUCTS</a></li>
-					<li><a href="about.html">ABOUT</a></li>
-				</ul>
-			</div>
-			<div class="col">
-				<ul>
-					<li>Contact us:</li>
-					<li>Phone: 0123456789</li>
-					<li>Fax: 0123456789</li>
-					<li>Email: naruto@naruto.com</li>
-				</ul>
+			<div class="rowx">
+				<div class="col">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="stories.html#nav">STORIES</a></li>
+						<li><a href="characters.html#nav">CHARACTERS</a></li>
+						<li><a href="products.html#nav">PRODUCTS</a></li>
+						<li><a href="about.html#nav">ABOUT</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<ul>
+						<li>Contact us:</li>
+						<li>Phone: 0123456789</li>
+						<li>Fax: 0123456789</li>
+						<li>Email: naruto@naruto.com</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="copyright">&copy; Steven Dao 2017</div>
-	</div>
+	</footer>
 	<script>
 		function initMap() {
 			var uluru = {

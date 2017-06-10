@@ -6,20 +6,27 @@
 	<link rel="icon" href="../img/icon/naruto.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="../js/animation.js"></script>
 </head>
 
 <body>
 	<div class="banner">
-		<img src="../img/banner/banner6.jpg">
+		<img src="../img/banner/banner6.jpg" alt="banner">
 	</div>
 	<div id="nav" class="navigation darkred">
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li class="active"><a href="stories.html#nav">STORIES</a></li>
-			<li><a href="characters.html#nav">CHARACTERS</a></li>
-			<li><a href="products.html#nav">PRODUCTS</a></li>
-			<li><a href="about.html#nav">ABOUT</a></li>
-		</ul>
+		<button class="nav-button">
+      		<img src="../img/icon/bars.png">
+    	</button>
+		<div class="navi-bar">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li class="active"><a href="stories.html#nav">STORIES</a></li>
+				<li><a href="characters.html#nav">CHARACTERS</a></li>
+				<li><a href="products.html#nav">PRODUCTS</a></li>
+				<li><a href="contact.html#nav">CONTACT</a></li>
+			</ul>
+		</div>
 	</div>
 	<div class="row tree lightred">
 		<a href="index.html">Home</a><span> / </span><a class="active" href="stories.html#nav">Stories</a>
@@ -30,16 +37,20 @@
 				<div class="col">
 					<a href="dattebayo.html">
 						<div class="img-container">
-							<img src="../img/stories/dattebayo.jpg" alt="Avatar">
+							<img src="../img/stories/dattebayo.jpg" alt="dattebayo">
 							<div class="middle">
-								<div class="capt">Dattebayo &#5171;</div>
+								<div class="capt">Dattebayo &#5171;<br/><span style="font-size:14px">*For the best display, please use wide screen devices</span></div>
 							</div>
 						</div>
 					</a>
 				</div>
 				<div class="col">
 					<h2>Dattebayo</h2>
-					<p class="justify">Naruto Uzumaki (うずまきナルト, Uzumaki Naruto) is a shinobi of Konohagakure. He became the jinchūriki of the Nine-Tails on the day of his birth — a fate that caused him to be shunned by most of Konoha throughout his childhood. After joining Team Kakashi, Naruto worked hard to gain the village's acknowledgement all the while chasing his dream to become Hokage...</p>
+					<p class="justify switchable">Naruto Uzumaki is a shinobi of Konohagakure. He became the jinchūriki of the Nine-Tails on the day of his birth — a fate that caused him to be shunned by most of Konoha throughout his childhood. Naruto worked hard to gain the village's acknowledgement all the while chasing his dream to become Hokage...</p>
+					<a href="dattebayo.html">
+						<div class="button darkred"><span>Read*</span></div>
+					</a>
+					<span style="font-size:12px">*For the best display, please use wide screen devices</span>
 				</div>
 			</div>
 		</section>
@@ -48,42 +59,52 @@
 				<div class="col">
 					<a href="shippuden.html">
 						<div class="img-container">
-							<img src="../img/stories/shippuden.png" alt="Avatar">
+							<img src="../img/stories/shippuden.png" alt="datebayo">
 							<div class="middle">
-								<div class="capt">Shippuden &#5171;</div>
+								<div class="capt">Shippuden &#5171;<br/><span style="font-size:14px">*For the best display, please use wide screen devices</span></div>
 							</div>
 						</div>
 					</a>
 				</div>
 				<div class="col">
 					<h2>Shippuden</h2>
-					<p class="justify">Through many hardships and ordeals, he became a capable ninja regarded as a hero both by the villagers, and soon after, the rest of the world, becoming known as the Hero of the Hidden Leaf. He soon proved to be one of the main factors in winning the Fourth Shinobi World War,...</p>
+					<p class="justify switchable">Through many hardships and ordeals, he became a capable ninja regarded as a hero both by the villagers, and soon after, the rest of the world, becoming known as the Hero of the Hidden Leaf. He soon proved to be one of the main factors in winning the Fourth Shinobi World War,...</p>
+					<a href="shippuden.html">
+						<div class="button lightred">
+							<span>Read*</span>
+						</div>
+					</a>
+					<span style="font-size:12px;">*For the best display, please use wide screen devices</span>
 				</div>
 			</div>
 		</section>
 	</div>
 	<footer class="darkred">
 		<div class="row">
-			<div class="col col-dou">
-				<img id="logo" src="../img/icon/naruto.ico">
-				<h2>Naruto Website</h2>
+			<div class="col col-dou center-mobile">
+				<a href="index.html"><img id="logo" src="../img/icon/naruto.ico" alt="logo"></a>
+				<a href="index.html">
+					<h2>Naruto Website</h2>
+				</a>
 			</div>
-			<div class="col">
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="stories.html#nav">STORIES</a></li>
-					<li><a href="characters.html#nav">CHARACTERS</a></li>
-					<li><a href="products.html#nav">PRODUCTS</a></li>
-					<li><a href="about.html#nav">ABOUT</a></li>
-				</ul>
-			</div>
-			<div class="col">
-				<ul>
-					<li>Contact us:</li>
-					<li>Phone: 0123456789</li>
-					<li>Fax: 0123456789</li>
-					<li>Email: naruto@naruto.com</li>
-				</ul>
+			<div class="rowx">
+				<div class="col">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="stories.html#nav">STORIES</a></li>
+						<li><a href="characters.html#nav">CHARACTERS</a></li>
+						<li><a href="products.html#nav">PRODUCTS</a></li>
+						<li><a href="about.html#nav">ABOUT</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<ul>
+						<li>Contact us:</li>
+						<li>Phone: 0123456789</li>
+						<li>Fax: 0123456789</li>
+						<li>Email: naruto@naruto.com</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="copyright">&copy; Steven Dao 2017</div>

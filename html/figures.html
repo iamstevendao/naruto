@@ -10,20 +10,27 @@
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="../css/demo.css" />
 	<script src="../js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="../js/animation.js"></script>
 </head>
 
 <body>
 	<div class="banner">
-		<img src="../img/banner/banner6.jpg">
+		<img src="../img/banner/banner6.jpg" alt="banner">
 	</div>
 	<div id="nav" class="navigation darkred">
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="stories.html#nav">STORIES</a></li>
-			<li><a href="characters.html#nav">CHARACTERS</a></li>
-			<li class="active"><a href="products.html#nav">PRODUCTS</a></li>
-			<li><a href="about.html#nav">ABOUT</a></li>
-		</ul>
+		<button class="nav-button">
+      		<img src="../img/icon/bars.png">
+    	</button>
+		<div class="navi-bar">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="stories.html#nav">STORIES</a></li>
+				<li><a href="characters.html#nav">CHARACTERS</a></li>
+				<li class="active"><a href="products.html#nav">PRODUCTS</a></li>
+				<li><a href="contact.html#nav">CONTACT</a></li>
+			</ul>
+		</div>
 	</div>
 	<div class="row tree lightred">
 		<a href="index.html">Home</a><span> / </span><a href="products.html#nav">Products</a><span> / </span><a class="active" href="figures.html#nav">Figures</a>
@@ -31,7 +38,7 @@
 	<div class="content">
 		<div class="row lightred">
 			<div class="col">
-				<img src="../img/products/figures.jpg">
+				<img src="../img/products/figures.jpg" alt="figures">
 			</div>
 			<div class="col">
 				<h2>Purchase Naruto Figures</h2>
@@ -51,45 +58,45 @@
 			<div class="sample">
 				<ul class="grid effect-2" id="gridx">
 					<li>
-						<img src="../img/products/figures1.jpg" alt="img25" />
+						<img src="../img/products/figures1.jpg" alt="figure" />
 					</li>
 					<li>
-						<img src="../img/products/figures2.jpg" alt="img25" />
+						<img src="../img/products/figures2.jpg" alt="figure" />
 
 					</li>
 					<li>
-						<img src="../img/products/figures3.jpg" alt="img25" />
+						<img src="../img/products/figures3.jpg" alt="figure" />
 
 					</li>
 					<li>
-						<img src="../img/products/figures4.jpg" alt="img25" />
+						<img src="../img/products/figures4.jpg" alt="figure" />
 					</li>
-					<li> <img src="../img/products/figures5.jpg" alt="img25" />
+					<li> <img src="../img/products/figures5.jpg" alt="figure" />
 					</li>
 					<li>
-						<img src="../img/products/figures6.jpg" alt="img25" />
+						<img src="../img/products/figures6.jpg" alt="figure" />
 
 					</li>
 					<li>
-						<img src="../img/products/figures7.jpg" alt="img25" />
+						<img src="../img/products/figures7.jpg" alt="figure" />
 					</li>
 					<li>
-						<img src="../img/products/figures8.jpg" alt="img25" />
+						<img src="../img/products/figures8.jpg" alt="figure" />
 					</li>
 					<li>
-						<img src="../img/products/figures9.jpeg" alt="img25" />
+						<img src="../img/products/figures9.jpg" alt="figure" />
 					</li>
 					<li>
-						<img src="../img/products/figures10.png" alt="img25" />
+						<img src="../img/products/figures10.png" alt="figure" />
 					</li>
 					<li>
-						<img src="../img/products/figures11.jpg" alt="img25" />
+						<img src="../img/products/figures11.jpg" alt="figure" />
 					</li>
 					<li>
-						<img src="../img/products/figures12.jpg" alt="img25" />
+						<img src="../img/products/figures12.jpg" alt="figure" />
 					</li>
 					<li>
-						<img src="../img/products/figures13.jpg" alt="img25" />
+						<img src="../img/products/figures13.jpg" alt="figure" />
 					</li>
 				</ul>
 			</div>
@@ -97,26 +104,30 @@
 	</div>
 	<footer class="darkred">
 		<div class="row">
-			<div class="col col-dou">
-				<img id="logo" src="../img/icon/naruto.ico">
-				<h2>Naruto Website</h2>
+			<div class="col col-dou center-mobile">
+				<a href="index.html"><img id="logo" src="../img/icon/naruto.ico" alt="logo"></a>
+				<a href="index.html">
+					<h2>Naruto Website</h2>
+				</a>
 			</div>
-			<div class="col">
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="stories.html#nav">STORIES</a></li>
-					<li><a href="characters.html#nav">CHARACTERS</a></li>
-					<li><a href="products.html#nav">PRODUCTS</a></li>
-					<li><a href="about.html#nav">ABOUT</a></li>
-				</ul>
-			</div>
-			<div class="col">
-				<ul>
-					<li>Contact us:</li>
-					<li>Phone: 0123456789</li>
-					<li>Fax: 0123456789</li>
-					<li>Email: naruto@naruto.com</li>
-				</ul>
+			<div class="rowx">
+				<div class="col">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="stories.html#nav">STORIES</a></li>
+						<li><a href="characters.html#nav">CHARACTERS</a></li>
+						<li><a href="products.html#nav">PRODUCTS</a></li>
+						<li><a href="about.html#nav">ABOUT</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<ul>
+						<li>Contact us:</li>
+						<li>Phone: 0123456789</li>
+						<li>Fax: 0123456789</li>
+						<li>Email: naruto@naruto.com</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="copyright">&copy; Steven Dao 2017</div>
