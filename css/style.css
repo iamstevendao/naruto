@@ -76,7 +76,7 @@ footer ul,
 .tree {
 	display: block;
 	font-size: 14px;
-	width: 90%;
+	width: 80%;
 	margin: 5px auto;
 }
 
@@ -254,6 +254,11 @@ footer .col-dou {
 	}
 	.tree {
 		padding-left: 10px;
+	}
+	.sample {
+		width: 100%;
+		max-width: 100%;
+		padding: 0;
 	}
 }
 

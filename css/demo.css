@@ -108,12 +108,6 @@
 }
 
 
-/* Individual effects */
-
-
-/*---------------*/
-
-
 /***** Zoe *****/
 
 
@@ -158,6 +152,10 @@ figure.effect-zoe:hover p.description {
 	opacity: 1;
 }
 
+figure.effect-zoe:hover img {
+	opacity: 0.5;
+}
+
 figure.effect-zoe:hover figcaption,
 figure.effect-zoe:hover h2,
 figure.effect-zoe:hover p.icon-links a {
@@ -193,11 +191,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 	.grid figure {
 		display: inline-block;
 		float: none;
-		margin: 10px auto;
+		margin: 0 auto;
 		width: 100%;
 	}
-}
-
-body {
-	background-color: black;
 }
