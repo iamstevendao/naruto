@@ -1,0 +1,84 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta name="viewport" content="width = 1050, user-scalable = no" />
+	<link rel="stylesheet" href="../css/style.css">
+	<script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="../js/modernizr.2.5.3.min.js"></script>
+</head>
+
+<body>
+	<a href="stories.html#nav">
+		<div class="close">
+		</div>
+	</a>
+	<div class="flipbook-viewport">
+		<div class="container">
+			<div class="flipbook">
+				<div style="background-image:url(../img/pages/02.png)"></div>
+				<div style="background-image:url(../img/pages/10.png)"></div>
+				<div style="background-image:url(../img/pages/9.png)"></div>
+				<div style="background-image:url(../img/pages/7.png)"></div>
+				<div style="background-image:url(../img/pages/8.png)"></div>
+				<div style="background-image:url(../img/pages/5.png)"></div>
+				<div style="background-image:url(../img/pages/6.png)"></div>
+				<div style="background-image:url(../img/pages/3.png)"></div>
+				<div style="background-image:url(../img/pages/4.png)"></div>
+				<div style="background-image:url(../img/pages/1.png)"></div>
+				<div style="background-image:url(../img/pages/2.png)"></div>
+				<div style="background-image:url(../img/pages/11.png)"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		function loadApp() {
+
+			// Create the flipbook
+
+			$('.flipbook').turn({
+				// Width
+
+				width: 922,
+
+				// Height
+
+				height: 600,
+
+				// Elevation
+
+				elevation: 50,
+
+				// Enable gradients
+
+				gradients: true,
+
+				// Auto center this flipbook
+
+				autoCenter: true
+
+			});
+		}
+
+		// Load the HTML4 version if there's not CSS transform
+
+		yepnope({
+			test: Modernizr.csstransforms,
+			yep: ['../js/lib/turn.js'],
+			nope: ['../js/lib/turn.html4.min.js'],
+			both: ['../css/pages.css'],
+			complete: loadApp
+		});
+	</script>
+
+</body>
+
+</html>

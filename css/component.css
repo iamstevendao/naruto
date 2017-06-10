@@ -13,6 +13,10 @@
 	opacity: 0;
 }
 
+#gridx li {
+	padding: 7px;
+}
+
 .grid li.shown,
 .no-js .grid li,
 .no-cssanimations .grid li {
